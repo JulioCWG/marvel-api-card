@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "jade": "jade -o ./ -w -P lib/index.jade lib/avengers.jade",
+    "stylus": "stylus -u nib -w -c -o ./public/css/ ./lib/app.styl",
+    "server": "live-server",
+    "babel": "babel --watch lib --out-dir public"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.2.1"
+  },
+  "presets": ["env"]
+  }

@@ -1,0 +1,18 @@
+section(class="Layout")
+    section(class="Layout-angonist")
+        each back in [1,2,3,4,5]
+          include ../back/template.jade
+    section(class="Layout-main")
+        div(class="Layout-status")
+          each name in ["Gabriel", "Julio"]
+            include ../status/template.jade
+
+        div(class="Layout-battle")
+            include ../battle/template.jade
+        div(class="Layout-phases")
+            div(class="Phases")
+                -text = "Ese Ataque fue cabron le diste en su madre con 300 puntos"
+                include ../phases/template.jade
+    section(class="Layout-player")
+        each card in [1,2,3,4,5]
+          include ../card/template.jade
