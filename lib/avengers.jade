@@ -8,13 +8,17 @@ html(lang="es")
     section.Layout
       section.Layout-main
         .Layout-status
+            form.CharacterForm
+              input.CharacterForm-name(type="text", placeholder="Agrega un personaje") 
+              button Agregar
+            span.CharacterForm-message  
         .Layout-battle
           .Battle
             - clase =""
             .Battle-angonist
             .Battle-player
-              each card in [1,2,3,4,5]
-                include card/template.jade
+              //- each card in [1,2,3,4,5]
+              //-   include card/template.jade
   script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
   script(src="public/util/marvel-api.js")
   script(src="public/app.js")
